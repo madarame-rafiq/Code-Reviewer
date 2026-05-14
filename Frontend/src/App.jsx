@@ -1,7 +1,7 @@
 import EditorPackage from "react-simple-code-editor";
 import Prism from "prismjs";
 
-const BACKENDAPI = import.meta.env.API_URL;
+const BACKENDAPI = import.meta.env.VITE_API_URL;
 
 import "prismjs/themes/prism-tomorrow.css";
 
