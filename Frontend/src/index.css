@@ -127,3 +127,99 @@ main{
 }
 
 
+
+
+
+
+
+
+@media (max-width: 900px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .languages-selector {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    main {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+        margin-top: 30px;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+    }
+
+    .code-container {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .editor {
+        min-height: 350px !important;
+        font-size: 14px !important;
+    }
+
+    .review-btn {
+        width: 30%;
+        text-align: center;
+    }
+
+    .right {
+        padding: 15px;
+        overflow-x: auto;
+    }
+
+    .logo {
+        font-size: 1.4rem;
+    }
+
+    .selected-lang {
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .container {
+        padding: 10px;
+    }
+
+    nav {
+        padding: 10px 0;
+    }
+
+    .languages-selector {
+        width: 100%;
+    }
+
+    .lang {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    .editor {
+        min-height: 280px !important;
+        font-size: 13px !important;
+    }
+
+    .review-btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .right {
+        font-size: 14px;
+    }
+
+}
