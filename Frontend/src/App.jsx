@@ -1,6 +1,8 @@
 import EditorPackage from "react-simple-code-editor";
 import Prism from "prismjs";
 
+const BACKENDAPI = import.meta.env.API_URL;
+
 import "prismjs/themes/prism-tomorrow.css";
 
 import "prismjs/components/prism-clike";
@@ -52,7 +54,7 @@ function App() {
 
     setLoading(true)
     try {
-      const res = await axios.post('http://localhost:5001/ai/get-review', {code, language});
+      const res = await axios.post(`${BACKENDAPI}/ai/get-review`, {code, language});
       setReview(res.data.review);
     } catch (error) {
         setReview("Backend ne raju ko diya tapa tap!");
